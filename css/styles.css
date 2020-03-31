@@ -1,0 +1,120 @@
+body {
+    font-family: "GOST UI 2",Helvetica,Tahoma,sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+}
+div#myMain {
+    color:black;
+    width: 100%;
+    max-width:860px;
+    min-width: 640px;
+    height: auto;
+    box-sizing: border-box;
+    padding: 25px 20px;
+}
+div#myMain h3 {
+    font-size: 1.5rem;
+    text-align: left;
+    margin-bottom: 15px;
+    margin-top: 0;
+    text-align: left;
+    font-weight: 700;
+}
+div#myMain #myForm {
+    width: 100%;
+    margin: 15px 0 30px 0;
+    height: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+div#myMain #mySearch {
+    width: 100%;
+    padding: 2px;
+    min-height: 40px;
+    border-radius: .25rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    border: solid .0625rem rgba(97,115,143,.16);
+    background-color: rgb(255, 255, 255);
+    box-sizing:border-box;
+}
+div#myMain #mySearch::placeholder {
+    color: rgb(108, 117, 125);
+    opacity: 1;
+    font-weight: normal;
+    font-size: 0.9rem;
+}
+div#myMain #mySearch:focus {
+    font-weight: bold;
+    border: 1px solid black;
+    box-shadow: 0 8px 8px 0 rgba(37,53,61,.16);
+}
+div#myMain #mySearch:hover {
+    border: 1px solid black;
+    box-shadow: 0 8px 8px 0 rgba(37,53,61,.16);
+}
+div#myMain #myButt{
+    height: 40px;
+    margin-left: 16px;
+    border-style: none;
+    cursor: pointer;
+    box-shadow: 0 24px 24px rgba(22,87,184,.04),0 4px 8px rgba(22,87,184,.16);
+    color: #fff;
+    background-color: rgb(22, 87, 184);
+    padding: .5rem 1rem;
+    text-align: center;
+    font-weight: bold;
+    transition: .3s;
+    box-sizing:border-box;
+}
+div#myMain #myButt:hover {
+    background-color: rgb(22, 87, 160);
+    border-radius:3px;
+}
+div#myMain #infoBlock {
+    width:100%;
+    height: auto;
+    margin-top: 20px;
+}
+div#myMain #infoBlock div.formOptions {
+        cursor: pointer;
+        width: 330px;
+        overflow: hidden;
+        background-color: #F0F1F5;
+        border-radius: 2px;
+        margin-top:0;
+        margin-bottom: 5px;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 3px;
+        box-shadow: 1px 1px 1px black;
+        transition: all 0.1s;
+}
+div#myMain #infoBlock div.formOptions:hover {
+       box-shadow: 0 0 1px 1px black, 0 0 1px 1px black;
+       background-color: #ABC0E0;
+       font-weight: bold;
+       color: white;
+}
+div#myMain #infoBlock p {
+    font-size:1em;
+    margin: 0;
+    line-height: 120%;
+    text-align: left;
+    text-indent: 0;
+    font-style: italic;
+    color: red;
+} 
+div#myMain #infoBlock table.myTab {border-collapse:collapse;width:100%;margin:0;font-size:100%;border-bottom:1px black solid;}
+div#myMain #infoBlock table.myTab td {text-align:left;vertical-align:middle;padding:4px;border-bottom: 1px solid lightgray;}
+div#myMain #infoBlock table.myTab td:first-child {
+    width: 40%;
+    font-weight: bold;
+}
+div#myMain #infoBlock table.myTab tr:nth-child(8n) {
+    border-bottom: 2px solid black;
+}
