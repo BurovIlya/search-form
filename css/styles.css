@@ -9,22 +9,21 @@ div#myMain {
     color:black;
     width: 100%;
     max-width:860px;
-    min-width: 640px;
-    height: auto;
     box-sizing: border-box;
     padding: 25px 20px;
 }
 div#myMain h3 {
     font-size: 1.5rem;
     text-align: left;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
     margin-top: 0;
     text-align: left;
     font-weight: 700;
+    line-height: 130%;
 }
 div#myMain #myForm {
     width: 100%;
-    margin: 15px 0 30px 0;
+    margin-bottom: 2rem;
     height: 50px;
     display: flex;
     flex-wrap: nowrap;
@@ -32,7 +31,7 @@ div#myMain #myForm {
     align-items: center;
 }
 div#myMain #mySearch {
-    width: 100%;
+    flex-grow: 1;
     padding: 2px;
     min-height: 40px;
     border-radius: .25rem;
@@ -49,9 +48,12 @@ div#myMain #mySearch::placeholder {
     font-size: 0.9rem;
 }
 div#myMain #mySearch:focus {
-    font-weight: bold;
     border: 1px solid black;
     box-shadow: 0 8px 8px 0 rgba(37,53,61,.16);
+}
+div#myMain #mySearch:focus::placeholder {
+    opacity: 0;
+    font-size: 0;
 }
 div#myMain #mySearch:hover {
     border: 1px solid black;
